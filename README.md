@@ -2,13 +2,13 @@
 
 ## Setup
 
-1. Install dependancies
+* 1. Install dependancies
 ```bash
 npm install express typescript dotenv
 npm install -D @types/express @types/node @types/dotenv nodemon rimraf concurrently
 ```
 
-2. Create tsconfig.json file
+* 2. Create tsconfig.json file
 ```bash
 npx tsc --init
 ```
@@ -17,7 +17,7 @@ Uncomment the following lines in the file
     "rootDir": "./src",
     "outDir": "./dist",
 ```
-3. Edit scripts
+* 3. Edit scripts
 Add the following scripts
 ```json
 {
@@ -29,7 +29,7 @@ Add the following scripts
 }
 ```
 
-4. Test your app
+* 4. Test your app
 Build and run your app
 ```bash
 npm run build
