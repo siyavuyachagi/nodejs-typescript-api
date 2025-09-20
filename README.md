@@ -13,9 +13,10 @@ npm install -D @types/express @types/node @types/dotenv nodemon rimraf concurren
 npx tsc --init
 ```
 Uncomment the following lines in the file
+```
     "rootDir": "./src",
     "outDir": "./dist",
-
+```
 3. Edit scripts
 Add the following scripts
 ```json
