@@ -17,3 +17,20 @@ Uncomment the following lines in the file
     "outDir": "./dist",
 
 3. Edit scripts
+Add the following scripts
+```json
+{
+    "scripts": {
+        "build": "concurrently \"rimraf dist\" \"tsc\"",
+        "start": "node dist/index.js",
+        "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\""
+    },
+}
+```
+
+4. Test your app
+Build and run your app
+```bash
+npm run build
+npm run dev
+```
